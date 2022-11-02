@@ -9,100 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="./src/style/index.css" />
+    <link rel="stylesheet" href="./src/js/index.js" />
+
     <title>Pimenta Sinatra</title>
-    <style>
-      body {
-        background-color: #ff2626;
-        overflow-x: hidden;
-        padding-bottom: 30px;
-      }
-
-      .page {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;
-        width: 100%;
-        height: 95vh;
-        background-color: #ff2626;
-      }
-
-      .page > img {
-        width: 650px;
-      }
-
-      .social-links {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 15px;
-        width: 400px;
-      }
-
-      .especial-links {
-        display: flex;
-        flex-direction: column;
-        margin-top: 28px;
-      }
-
-      .link-btn-row {
-        box-shadow: 5px -5px 0px #000;
-        width: 400px;
-        margin-top: 20px;
-        padding: 5px 15px;
-      }
-
-      .link-btn-row:hover {
-        box-shadow: 5px -5px 0px rgba(0, 0, 0, 0.63);
-      }
-
-      .link-btn-row > div {
-        font-size: 1.8em;
-        font-weight: bold;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 5px 20px;
-      }
-
-      .link-btn-row.jstart > div {
-        justify-content: start;
-      }
-
-      .link-btn-row > div > div {
-        margin-left: 15px;
-      }
-
-      .link-btn {
-        background-color: #fff;
-        border: none;
-        cursor: pointer;
-        padding: 2px 5px;
-        border-radius: 15px;
-      }
-
-      .link-btn:hover {
-        opacity: 0.9;
-      }
-
-      .link-btn img {
-        width: 50px;
-      }
-
-      .black-circle {
-        border-radius: 100%;
-        background-color: black;
-        padding: 5px;
-      }
-
-      .black-circle > img {
-        width: 35px;
-      }
-
-      .invert-img-color {
-        filter: invert(100%);
-      }
-    </style>
   </head>
   <body>
     <div class="page">
@@ -179,16 +89,4 @@
       </div>
     </div>
   </body>
-
-  <script>
-    document.querySelectorAll('.link-btn').forEach(btn => {
-      btn.addEventListener('click', e => {
-        const link = btn.getAttribute('lk');
-        if (!link) {
-          return;
-        }
-        window.open(link, '_system');
-      });
-    });
-  </script>
 </html>
