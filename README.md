@@ -1,9 +1,5 @@
 # Pimentas Sinatra Page
 
-### Deployed on versel
-
-https://pimentas-sinatra-page.vercel.app/
-
 ### Description
 Simple html page to share the contacts of the band sinatra pepper
 
